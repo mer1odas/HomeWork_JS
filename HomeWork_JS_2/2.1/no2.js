@@ -1,1 +1,0 @@
-hider.onclick = () => hider.remove()
