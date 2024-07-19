@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task_API.css">
+    <link rel="stylesheet" href="https://libs.cdnjs.net/font-awesome/6.5.2/css/all.css">
+</head>
+
+<body>
+    <h1 class="films">Films: Star Wars</h1>
+    <nobr id="AllFilms">
+        <div class="film">A New Hope</div>
+        <div class="film">The Empire Strikes Back</div>
+        <div class="film">Return of the Jedi</div>
+        <div class="film">The Phantom Menace</div>
+        <div class="film">Attack of the Clones</div>
+        <div class="film">Revenge of the Sith</div>
+    </nobr>
+
+    <h1 class="filmsName" id="filmsName">Films: </h1>
+
+    <div class="infoFilm">Название: <div class="API" id="Name"></div></div>
+    <div class="infoFilm">Эпизод: <div class="API" id="episode"></div></div>
+    <div class="infoFilm">Директор: <div class="API" id="director"></div></div>
+    <div class="infoFilm">Продюсер: <div class="API"  id="producer"></div></div>
+    <div class="infoFilm">Дата выхода: <div class="API" id="data"></div></div>
+    <div class="flex">
+        <div class="infoFilm">Актеры:</div>
+        <svg id="DownUp" class="DownUp" xmlns="http://www.w3.org/2000/svg" height="20" width="17.25" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3l0 293.5L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7l0-293.5 41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+    </div>
+    <div id="actors" hidden></div>
+
+    <div class="flex">
+        <div class="infoFilm">Звездные корабли:</div>
+        <svg id="starships" class="DownUp" xmlns="http://www.w3.org/2000/svg" height="20" width="17.25" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M182.6 9.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L128 109.3l0 293.5L86.6 361.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 402.7l0-293.5 41.4 41.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-96-96z"/></svg>
+    </div>
+    <div id="starship" hidden>
+        <div class="tooltipForStarShip" id="tooltipForStarShip" hidden>
+            <i class="fa-solid fa-xmark fa-2xl close" id="close2"></i> 
+            <h1 class="infoStarShip nameStarShip" id="NameStarShip">Имя корабля</h1>
+            <div class="infoStarShip" id="classStarShip">Класс</div>
+            <div class="infoStarShip" id="manufacturer">Производитель</div>
+            <div class="infoStarShip" id="passengers">Вмещаемость</div>
+            <div class="infoStarShip" id="speed">Скорость</div>
+            <div class="infoStarShip" id="length1">Длина</div>
+        </div>
+    </div>
+
+    <div id="modal" hidden>
+        <div class="behind"></div>
+        <div class="modal">
+            <i class="fa-solid fa-xmark fa-2xl close" id="close1"></i>
+            <h1 class="infoPeople namePeople" id="namePeople">Имя</h1>
+            <div class="infoPeople" id="height">Рост</div>
+            <div class="infoPeople" id="massa">Масса</div>
+            <div class="infoPeople" id="eye_color">Цвет глаз</div>
+            <div class="infoPeople" id="birthday_year">День рождения</div>
+        </div>
+    </div>
+
+    <script src="films.js"></script>
+</body>
+
+</html>
