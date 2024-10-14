@@ -1,0 +1,27 @@
+.nav {
+    height: 40px;
+    width: 80%;
+    margin: auto;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+li {
+    list-style: none;
+    display: inline;
+    margin: 0px 3px;
+    line-height: 40px;
+
+}
+ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+img {
+    cursor: pointer;
+}

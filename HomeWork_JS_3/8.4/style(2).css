@@ -1,0 +1,24 @@
+.icon {
+    float: left;
+    width: 16px;
+    height: 16px;
+    /* background: url("https://js.cx/sprite-tree/minus.gif"); */
+}
+.open .icon {
+    background: url("https://js.cx/sprite-tree/minus.gif");
+    cursor: pointer;
+}
+.closed .icon {
+    background: url("https://js.cx/sprite-tree/plus.gif");
+    cursor: pointer;
+}
+.leaf .icon {
+    background: url("https://js.cx/sprite-tree/article.gif");
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+.text {
+    margin: 6px 16px;
+}
